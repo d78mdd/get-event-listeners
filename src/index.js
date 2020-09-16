@@ -63,12 +63,12 @@ document.__proto__.removeEventListener = _removeListener
 document.__proto__.getEventListeners = Element.prototype.getEventListeners
 
 // get all registered listeners
-export function getAllEventListeners() {
+/*export*/ function getAllEventListeners() {
   return eventsCache
 }
 
 // get listeners of an element
-export function getEventListeners(el) {
+/*export*/ function getEventListeners(el) {
   return el.getEventListeners.bind(el)
 }
 
